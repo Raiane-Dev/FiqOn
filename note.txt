@@ -1,0 +1,102 @@
+Request URI: http://localhost/FiqOn/request.php
+
+* JSON para Vacancy
+Create >
+            {
+                "title": "Lorem ipsum new Job",
+                "image": "https://www.seekpng.com/png/detail/407-4071094_leao-logo-png-leao-laranja.png",
+                "color": "Red",
+                "workload": 8,
+                "modality": "Dev",
+                "wage": 15000,
+                "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.",
+                "roles": "Dev Backend",
+                "minimum_requirements": "Saber o básico de SQL",
+                "differentials": "Ter trabalhado com Laravel"
+            }
+
+Update >
+            {
+                "id": 5,
+                "title": "Lorem ipsum UPDATE",
+                "image": "https://www.seekpng.com/png/detail/407-4071094_leao-logo-png-leao-laranja.png",
+                "color": "Red",
+                "workload": 8,
+                "modality": "Dev",
+                "wage": 15000,
+                "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.",
+                "roles": "Dev Backend",
+                "minimum_requirements": "Saber o básico de SQL",
+                "differentials": "Ter trabalhado com Laravel"
+            }
+
+Delete > 
+            {
+                "title": "Lorem ipsum new Job",
+                "type": "job"
+            }
+
+
+
+
+
+
+/* JSON para Subscribed
+Create >
+            {
+                "name":"Raiane A. Daros",
+                "user_id": 25,
+                "vacancy_id": 5,
+                "email":"raiane.dev@gmail.com",
+                "whatsapp":"5100000000",
+                "repository_link":"https://github.com/Raiane-Dev?tab=repositories",
+                "cv":"loremipsum.com"
+            }
+
+Update >
+            {
+                "id": 4,
+                "user_id": 26,
+                "vacancy_id": 5,
+                "name":"Raiane A. Daros",
+                "email":"raiane.dev@gmail.com",
+                "whatsapp":"5100000000",
+                "repository_link":"https://github.com/Raiane-Dev?tab=repositories",
+                "cv":"loremipsum.com.br"
+            }
+Delete >
+            {
+                "id": 2,
+                "type": "subscribed"
+            }
+
+
+
+
+
+
+/* JSON para Users
+Create >
+            {
+                "name":"Raiane A. Daros",
+                "email":"raiane.dev@gmail.com",
+                "password":"raiane",
+                "image":"Usuario.png",
+                "function":"0"
+            }
+
+Update >
+            {
+                "id": 24,
+                "name":"Raiane Arcaro Daros",
+                "email":"raiane.dev@gmail.com",
+                "password":"raiane2",
+                "image":"Usuario.png",
+                "function":"0"
+            }
+
+Delete >
+            {
+                id: 24,
+                type: "users"
+            }

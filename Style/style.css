@@ -1,0 +1,342 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --white:#ffffff;
+    --gray-slim:#f5f5fd;
+    --gray-strong:#ececf6;
+    --gray-text:#bdc1cc;
+    --gray-medium:#e4e4f0;
+    --gray-shadow:#f0f0fa;
+    --black:#1a1a1b;
+    --black-blue:#14121f;
+    --gray-black:#4b4c4e;
+    --black-gray:#1b1823;
+    --red:#ee0d0a;
+    --yellow:#f3ac07;
+    --green: #1aa31b;
+}
+body{
+    background-color: var(--white);
+}
+h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color:var(--black);
+}
+h2{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color:var(--black);
+}
+h3{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color:var(--black);
+}
+h4{
+    font-size: 1rem;
+    font-weight: 500;
+    color:var(--black);
+}
+h5{
+    font-size: 1rem;
+    font-weight: 400;
+    color:var(--black);
+}
+h6{
+    font-size: .9rem;
+    font-weight: 500;
+    color:var(--black);
+}
+p{
+    font-size: .9rem;
+    font-weight: 400;
+    color:var(--gray-text);
+}
+a{
+    text-decoration: none;
+    font-size: .9rem;
+    font-weight: 500;
+    color:var(--black);
+}
+ul li{
+    display: inline-block;
+    font-size: .9rem;
+    font-weight: 400;
+    color:var(--gray-text);
+    margin-bottom:.5em;
+}
+svg.feather.feather{
+    width: 1.2rem;
+    color:var(--black);
+    vertical-align: middle;
+    stroke-linecap:round;
+}
+img{
+    width: 100%;
+}
+label{
+    font-size: .9rem;
+    font-weight: 400;
+    margin-top: 1em;
+    color:var(--gray-text);
+}
+form.pages input{
+    margin-bottom: 2em;
+}
+input, button, select, textarea{
+    outline: unset;
+    border:unset;
+}
+button{
+    background-color: unset;
+}
+input[type=text], input[type=search], input[type=number], select, textarea, input[type=password], input[type=file]{
+    background-color: var(--white);
+    border-radius: .5em;
+    padding: 1em;
+    box-shadow: 0px 0px 5em var(--gray-shadow);
+    width: 100%;
+}
+input[type=submit]{
+    background-color: var(--black);
+    padding: .6em;
+    width: 100%;
+    border-radius: .5em;
+    color:var(--white);
+    font-weight: 500;
+    font-size: .9rem;
+}
+form.pages{
+    height: 100vh;
+}
+div.search input[type=search]{
+    border:unset;
+    padding: unset;
+    box-shadow: unset;
+}
+div.search svg.feather.feather{
+    width: .9rem;
+    margin: 0 1em;
+}
+div.search{
+    background-color: var(--white);
+    border-radius: 2em;
+    padding: .5em;
+    box-shadow: 0px 0px 5em var(--gray-shadow);
+    display: flex;
+    justify-content: space-between;
+}
+
+/*BODY*/
+section.global{
+    display: grid;
+    grid-template-columns: 10% 60% 30%;
+}
+main{
+    background-color: var(--white);
+    padding: 5%;
+}
+aside, header{
+    background-color: var(--gray-slim);
+    padding: 3%;
+}
+aside{
+    width: 90%;
+    box-shadow: 0px 0px 5em var(--gray-shadow);
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+table{
+    padding: 1em;
+    background-color: var(--gray-slim);
+    border-radius: 1em;
+    width: 100%;
+    margin: 1em 0;
+}
+table tbody tr{
+    display: grid;
+    grid-template-columns: 8% 25% 25% 20% 20%;
+    align-items: center;
+    margin-bottom: 1em;
+}
+table tbody tr:hover{
+    box-shadow: 0px 0px 5em var(--gray-shadow);
+    background-color: var(--white);
+    transition: 500ms;
+}
+table img{
+    border-radius: 50%;
+    object-fit: cover;
+    width: 2.5em;
+    height: 2.5em;
+}
+.active svg.feather{
+    stroke:var(--black-gray);
+    fill:var(--gray-black);
+}
+
+/*FRAMEWORK*/
+div.box{
+    background-color: var(--white);
+    box-shadow: 0px 0px 5em var(--gray-shadow);
+    border-radius: 1em;
+    padding: 1.5em;
+}
+div.box svg.feather.feather{
+    width: 2.2rem;
+}
+div.box p{
+    font-size: .8rem;
+    margin-top: .5em;
+    margin-bottom: .8em;
+}
+div.box h4{
+    font-weight: 800;
+}
+div.columns-two{
+    display: grid;
+    grid-template-columns: 49% 49%;
+    justify-content: space-between;
+}
+div.columns-three{
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    justify-content: space-between;
+}
+div.columns-four{
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    justify-content: space-between;
+}
+div.columns-five{
+    display: grid;
+    grid-template-columns:19% 19% 19% 19% 19%;
+    justify-content: space-between;
+}
+div.separator{
+    margin: 2em 0;
+}
+
+/*HEADER*/
+header div.top-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1em;
+}
+div.bool{
+    width: .7em;
+    height: .7em;
+    margin: .3em;
+    background-color: var(--red);
+    border-radius: 50%;
+}
+div.bool:nth-of-type(2){
+    background-color: var(--yellow);
+}
+div.bool:nth-of-type(3){
+    background-color: var(--green);
+}
+header div.menu{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-top: 5em;
+    flex-direction: column;
+}
+header div.menu span{
+    margin-bottom: 1.5em;
+    position: relative;
+}
+
+
+/*ASIDE*/
+div.flag div.flag-boxes{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 100%;
+    overflow-x: auto;
+}
+div.flag-boxes::-webkit-scrollbar{
+    width:.8em;
+    height: 0em;
+}
+div.flag div.flag-single{
+    min-width: 100%;
+    background-image: linear-gradient(120deg, var(--gray-black), var(--black-gray));
+    margin:1em 0;
+    border-radius: 2em;
+    box-shadow: 0px 0px 8em 1em var(--gray-shadow);
+    padding: 2em;
+}
+div.flag-single svg.feather{
+    color:var(--white);
+    width:2rem;
+    height: 2rem;
+    stroke-width:2;
+    margin-bottom: 1em;
+}
+div.flag-single h6{
+    color:var(--white);
+    font-size: 1rem;
+}
+div.flag-single p{
+    font-size: .7rem;
+    color:var(--white);
+    font-weight: 300;
+}
+div.flag-single img{
+    width: 15%;
+    float: right;
+}
+div.list ul li.three{
+    display: block;
+    margin: 1em 0;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    align-items: center;
+}
+span.background{
+    padding: 1em;
+    background-color: var(--white);
+    border-radius: 1em;
+}
+div.list ul li.three h5{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/*LOGIN*/
+section.login, section.post{
+    padding: 5%;
+}
+img.round{
+    border-radius:50%;
+    object-fit:cover;
+    height:10em;
+    width:10em;
+}
+main.single-job div.columns-two{
+    justify-content:start;
+    align-items:flex;
+    grid-template-columns:30% 70%;
+}
+main.single-job ul li{
+    display:block;
+}
+div.divider{
+    height:1px;
+    width:100%;
+    background-color:var(--gray-slim);
+    margin:1em 0;
+}

@@ -1,7 +1,7 @@
 Request URI: http://localhost/FiqOn/request.php
 
 * JSON para Vacancy
-Create >
+POST >
             {
                 "title": "Lorem ipsum new Job",
                 "image": "https://www.seekpng.com/png/detail/407-4071094_leao-logo-png-leao-laranja.png",
@@ -15,7 +15,7 @@ Create >
                 "differentials": "Ter trabalhado com Laravel"
             }
 
-Update >
+PUT >
             {
                 "id": 5,
                 "title": "Lorem ipsum UPDATE",
@@ -30,10 +30,15 @@ Update >
                 "differentials": "Ter trabalhado com Laravel"
             }
 
-Delete > 
+DELETE > 
             {
                 "title": "Lorem ipsum new Job",
                 "type": "job"
+            }
+            
+GET > 
+            {
+                "file": "job"
             }
 
 
@@ -42,7 +47,7 @@ Delete >
 
 
 /* JSON para Subscribed
-Create >
+POST >
             {
                 "name":"Raiane A. Daros",
                 "user_id": 25,
@@ -53,7 +58,7 @@ Create >
                 "cv":"loremipsum.com"
             }
 
-Update >
+PUT >
             {
                 "id": 4,
                 "user_id": 26,
@@ -64,19 +69,22 @@ Update >
                 "repository_link":"https://github.com/Raiane-Dev?tab=repositories",
                 "cv":"loremipsum.com.br"
             }
-Delete >
+DELETE >
             {
                 "id": 2,
                 "type": "subscribed"
             }
 
-
+GET > 
+            {
+                "file": "subscribed"
+            }
 
 
 
 
 /* JSON para Users
-Create >
+POST >
             {
                 "name":"Raiane A. Daros",
                 "email":"raiane.dev@gmail.com",
@@ -85,7 +93,7 @@ Create >
                 "function":"0"
             }
 
-Update >
+PUT >
             {
                 "id": 24,
                 "name":"Raiane Arcaro Daros",
@@ -95,8 +103,13 @@ Update >
                 "function":"0"
             }
 
-Delete >
+DELETE >
             {
                 id: 24,
                 type: "users"
+            }
+            
+GET > 
+            {
+                "file": "users"
             }

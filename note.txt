@@ -17,7 +17,7 @@ POST >
 
 PUT >
             {
-                "id": 5,
+                "id": 4,
                 "title": "Lorem ipsum UPDATE",
                 "image": "https://www.seekpng.com/png/detail/407-4071094_leao-logo-png-leao-laranja.png",
                 "color": "Red",
@@ -32,7 +32,7 @@ PUT >
 
 DELETE > 
             {
-                "title": "Lorem ipsum new Job",
+                 "id": 4,
                 "type": "job"
             }
             
@@ -60,9 +60,9 @@ POST >
 
 PUT >
             {
-                "id": 4,
+                "id": 3,
                 "user_id": 26,
-                "vacancy_id": 5,
+                "vacancy_id": 4,
                 "name":"Raiane A. Daros",
                 "email":"raiane.dev@gmail.com",
                 "whatsapp":"5100000000",
@@ -71,7 +71,7 @@ PUT >
             }
 DELETE >
             {
-                "id": 2,
+                "id": 3,
                 "type": "subscribed"
             }
 
@@ -95,7 +95,7 @@ POST >
 
 PUT >
             {
-                "id": 24,
+                "id": 26,
                 "name":"Raiane Arcaro Daros",
                 "email":"raiane.dev@gmail.com",
                 "password":"raiane2",
@@ -105,7 +105,7 @@ PUT >
 
 DELETE >
             {
-                id: 24,
+                id: 26,
                 type: "users"
             }
             

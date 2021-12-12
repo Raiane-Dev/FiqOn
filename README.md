@@ -1,4 +1,4 @@
-<h5>Olá mundo! Bem vindos ao projeto da FiqOn, com foce em criação de API com os métodos POST, GET, DELETE e PUT.</h5>
+<h5>Olá mundo! Bem vindos ao projeto da FiqOn, com foco em criação de API com os métodos POST, GET, DELETE e PUT.</h5>
 <p></p>
 
 
